@@ -1,4 +1,4 @@
-import { config } from '../edit/config';
+import { getDrawProps } from '../../decorate.js';
 import { drawKeypoints } from './util';
 import { getPredictions } from './model';
 
@@ -81,8 +81,7 @@ function drawOnVideo(context, prediction, scale) {
     return;
   }
 
-  const { xCenter, yCenter, width, height, angle } =
-    config.getDrawProps(prediction);
+  const { xCenter, yCenter, width, height, angle } = getDrawProps(prediction);
   drawImageCenter(context, decoration, xCenter, yCenter, width, height, angle);
 }
 

@@ -11,13 +11,10 @@ import {
   takepictures,
   sizeVideoAndCanvas,
 } from './draw';
-import { config } from '../edit/config';
+import { decoration } from '../../decorate.js';
 import './style.scss';
 
 const canvas = document.getElementById('decoration-canvas');
-
-const decoration = document.getElementById('decoration');
-decoration.src = config.imgSrc;
 let currentVideo = null;
 
 window.launchExample = async function () {
@@ -35,6 +32,15 @@ window.launchScreen = async function () {
 getModel();
 
 (async () => {
+  const decorationImg = document.getElementById('decoration');
+  // const path = '../../smile.png';
+  // const path2 = `../../${decoration}`;
+  // console.log('decoration', decoration, path, path2, path === path2);
+  const importedDecoration = await decoration;
+  // const n = 'smile';
+  // const importedDecoration = await import(`../../${n}.png`);
+  decorationImg.src = importedDecoration.default;
+
   const model = await getModel();
   const exampleImg = document.getElementById('example');
   const testCanvas = document.getElementById('test-canvas');
