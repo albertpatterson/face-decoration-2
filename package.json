@@ -1,0 +1,17 @@
+{
+  "name": "ai-camera",
+  "version": "1.0.0",
+  "description": "Augment the video from a camera with image classification",
+  "scripts": {
+    "start": "cd framework; webpack serve --open --no-hot --live-reload",
+    "install": "cd framework; npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/albertpatterson/face-decoration"
+  },
+  "homepage": "https://github.com/albertpatterson/face-decoration#readme",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
