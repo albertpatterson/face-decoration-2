@@ -4,14 +4,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: 'development',
   devtool: 'inline-source-map',
-  entry: './do_not_touch/main.js',
+  entry: './framework/app/main.js',
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './do_not_touch/index.html',
+      template: './framework/app/index.html',
     }),
   ],
   module: {

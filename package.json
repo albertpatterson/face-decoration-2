@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Augment the video from a camera with image classification",
   "scripts": {
-    "start": "cd framework; webpack serve --open --no-hot --live-reload",
-    "postinstall": "cd framework; npm install"
+    "start": "webpack serve --config ./framework/webpack.config.js --open --no-hot --live-reload",
+    "printer-friendly-readme": "npx printer-friendly-readme@latest"
   },
   "repository": {
     "type": "git",
@@ -13,5 +13,16 @@
   "homepage": "https://github.com/albertpatterson/face-decoration#readme",
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "sass": "^1.56.0",
+    "sass-loader": "^13.1.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
+  }
 }
