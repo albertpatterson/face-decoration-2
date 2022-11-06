@@ -68,5 +68,3 @@ node_modules/
 junk
 dist
 .parcel-cache
-
-package-lock.json
