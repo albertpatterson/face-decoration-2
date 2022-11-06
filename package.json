@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Augment the video from a camera with image classification",
   "scripts": {
-    "start": "parcel do_not_touch/index.html --no-cache",
+    "start": "webpack serve --open --no-hot --live-reload",
     "printer-friendly-readme": "npx printer-friendly-readme@latest"
   },
   "repository": {
@@ -14,11 +14,15 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "parcel": "^2.7.0"
-  },
-  "type": "module",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.7.0"
+    "css-loader": "^6.7.1",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "sass": "^1.56.0",
+    "sass-loader": "^13.1.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
   }
 }

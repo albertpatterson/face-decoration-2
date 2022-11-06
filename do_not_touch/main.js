@@ -12,6 +12,7 @@ import {
   sizeVideoAndCanvas,
 } from './draw';
 import { config } from '../edit/config';
+import './style.scss';
 
 const canvas = document.getElementById('decoration-canvas');
 
